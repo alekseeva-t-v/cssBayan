@@ -91,3 +91,82 @@ hr {
   width: 80%;
   margin: 0 auto;
 }
+
+
+@media (min-width: 720px) {
+  .bayan__title {
+    font-size: 36px;
+  }
+  .wrapper {
+    max-width: 80vw;
+    margin: 2vh auto;
+  }
+  .bayan__img {
+    width: 60%;
+  }
+  .bayan__btn {
+    font-size: 20px;
+  }
+  .bayan__btn div {
+    width: 3vw;
+    height: 4vh;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 825px) {
+  .bayan__btn {
+    color: #007575;
+  }
+
+  .bayan__btn div {
+    opacity: 0;
+  }
+
+  .bayan__body:hover .bayan__btn {
+    color: #000000;
+  }
+
+  .bayan__body:hover .bayan__btn div {
+    opacity: 1;
+  }
+
+  .bayan__input:hover ~ .bayan__togle {
+    max-height: 80vh;
+    transition: 3s;
+  }
+
+  .bayan__item:hover > .bayan__togle {
+    max-height: 80vh;
+    transition: 3s;
+  }
+
+  .bayan__item:hover > .bayan__btn div {
+    transform: rotate(45deg);
+    transition: 1s;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bayan__title {
+    font-size: 40px;
+  }
+  .wrapper {
+    max-width: 50vw;
+    margin: 3vh auto;
+  }
+  .bayan__img {
+    width: 50%;
+  }
+  .bayan__btn {
+    font-size: 24px;
+  }
+  .bayan__btn div {
+    width: 2vw;
+    height: 3vh;
+    opacity: 0;
+  }
+  .bayan__btn p {
+    width: 90%;
+  }
+}
