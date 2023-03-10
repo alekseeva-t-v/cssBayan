@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr {
+  margin: 1vh 0;
+}
+
+.wrapper {
+  max-width: 90vw;
+  margin: 2vh auto;
+}
+
+.bayan__title {
+  margin-bottom: 3vh;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.bayan__item {
+  position: relative;
+}
+
+.bayan__input {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 5vh;
+  opacity: 0;
+}
+
+.bayan__togle {
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.bayan__btn {
+  display: flex;
+  min-height: 5vh;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -0.01vh;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.bayan__btn p {
+  width: 80%;
+}
+
+.bayan__btn div {
+  width: 5vw;
+  height: 5vh;
+  opacity: 1;
+  background-image: url(./img/plus.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.bayan__input:checked ~ .bayan__togle {
+  max-height: 80vh;
+  transition: 1s;
+}
+
+.bayan__input:checked ~ .bayan__btn {
+  color: #000000;
+}
+
+.bayan__input:checked ~ .bayan__btn div {
+  transform: rotate(45deg);
+}
+
+.bayan__togle__inner {
+  padding: 1vw;
+}
+
+.bayan__img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
